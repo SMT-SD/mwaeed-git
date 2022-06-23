@@ -1,0 +1,561 @@
+/* [Master Stylesheet] */
+/* ----------------------------------------------------------
+    :: Template 
+    :: Author: SMT
+    :: Author URL:www.smt.sa 
+    :: Version: 1.0
+    :: Created: 02 2022
+    :: Last Updated: 02 2022
+    ---------------------------------------------------------- */
+/* -------------------------------------------------
+    ============ PLACE YOUR CUSTOM CSS HERE ============
+    ------------------------------------------------- */
+/*start my style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Almarai", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.transition, footer ul li a, .contact button, .owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot, .help .help-owl .item svg, .classes .class-box svg, .classes .class-box h3, .classes .class-box, .intro nav button, .intro nav .nav-link {
+  transition: all ease-in-out 0.3s;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #2A3794;
+  text-align: center;
+}
+
+.section-p {
+  font-size: 20px;
+  text-align: center;
+  color: #2A3794;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.intro {
+  height: 100vh;
+  background: url("../images/intro-bg.png");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.intro nav {
+  background: transparent;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10001;
+}
+.intro nav img.logo {
+  width: 70px;
+}
+.intro nav .nav-link {
+  color: #fff !important;
+}
+.intro nav .nav-link:hover {
+  color: #02BDEB !important;
+}
+.intro nav button {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #02BDEB;
+  border-radius: 25px;
+  padding: 0.4rem 2rem;
+}
+.intro nav button:hover {
+  background: #02BDEB;
+}
+.intro .navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.intro .watch-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.intro .watch-box .clock {
+  background: #ececec;
+  width: 316px;
+  height: 316px;
+  margin: 8% auto 0;
+  border-radius: 50%;
+  border: 7px solid rgba(255, 255, 255, 0.297);
+  position: relative;
+  box-shadow: 0 2vw 4vw -1vw rgba(0, 0, 0, 0.8);
+}
+.intro .watch-box .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 2px 4px -1px black;
+}
+.intro .watch-box .hour-hand {
+  position: absolute;
+  z-index: 5;
+  width: 4px;
+  height: 65px;
+  background: #333;
+  top: 79px;
+  transform-origin: 50% 72px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.intro .watch-box .minute-hand {
+  position: absolute;
+  z-index: 6;
+  width: 4px;
+  height: 100px;
+  background: #666;
+  top: 46px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 105px;
+}
+.intro .watch-box .second-hand {
+  position: absolute;
+  z-index: 7;
+  width: 2px;
+  height: 120px;
+  background: gold;
+  top: 26px;
+  lefT: 50%;
+  margin-left: -1px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 125px;
+}
+.intro .watch-box span {
+  display: inline-block;
+  position: absolute;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+  z-index: 4;
+}
+.intro .watch-box .h12 {
+  top: 30px;
+  left: 50%;
+  margin-left: -9px;
+}
+.intro .watch-box .h3 {
+  top: 140px;
+  right: 30px;
+}
+.intro .watch-box .h6 {
+  bottom: 30px;
+  left: 50%;
+  margin-left: -5px;
+}
+.intro .watch-box .h9 {
+  left: 32px;
+  top: 140px;
+}
+.intro .watch-box .diallines {
+  position: absolute;
+  z-index: 2;
+  width: 2px;
+  height: 15px;
+  background: #666;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 150px;
+}
+.intro .watch-box .diallines:nth-of-type(5n) {
+  position: absolute;
+  z-index: 2;
+  width: 4px;
+  height: 25px;
+  background: #666;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 150px;
+}
+.intro .watch-box .info {
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  border-radius: 7px;
+  background: #ccc;
+  text-align: center;
+  line-height: 20px;
+  color: #000;
+  font-size: 11px;
+  top: 200px;
+  left: 50%;
+  margin-left: -60px;
+  font-weight: 700;
+  z-index: 3;
+  letter-spacing: 3px;
+  margin-left: -60px;
+  left: 50%;
+}
+.intro .watch-box .date {
+  top: 80px;
+}
+.intro .watch-box .day {
+  top: 200px;
+}
+
+.classes .class-box {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.classes .class-box h3 {
+  color: #2A3794;
+}
+.classes .class-box svg {
+  fill: #2A3794;
+  height: 80px;
+  margin-bottom: 30px;
+}
+.classes .class-box:hover {
+  transform: scale(1.1);
+}
+.classes .class-box:hover svg {
+  fill: #02BDEB;
+}
+.classes .class-box:hover h3 {
+  color: #02BDEB;
+}
+
+.help {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.help .help-owl .item {
+  margin-top: 140px;
+  color: #2A3794;
+  padding-right: 10px;
+}
+.help .help-owl .item svg {
+  fill: #2A3794;
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 30px;
+}
+.help .help-owl .item svg:hover {
+  fill: #02BDEB;
+}
+.help .help-owl .item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.help .help-owl .item p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.help .help-owl .item:hover svg {
+  fill: #02BDEB;
+}
+.help .owl-theme .owl-nav {
+  margin-top: 100px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  color: #2A3794;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+  color: #02BDEB;
+  text-decoration: none;
+}
+
+.help svg.bg {
+  position: absolute;
+  right: -200px;
+  width: 550px;
+  top: -150px;
+  z-index: -1;
+}
+
+.services .serv-box {
+  margin: 60px auto;
+  text-align: center;
+}
+.services .serv-box h4 {
+  background: url("../images/icons/circle.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center center;
+  height: 160px;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #2A3794;
+}
+.services .serv-box.spec h4 {
+  background: url("../images/icons/circle-2.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: center center;
+  height: 160px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  margin-top: 215px;
+}
+
+.price {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.price .item {
+  text-align: center;
+}
+.price .item h3 {
+  margin-top: 180px;
+  color: #2A3794;
+  font-weight: 600;
+}
+.price .item h4 {
+  color: #2A3794;
+}
+.price img.price-img {
+  margin-top: 50px;
+}
+
+.price svg.bg {
+  position: absolute;
+  left: -200px;
+  width: 550px;
+  top: -100px;
+  z-index: -1;
+}
+
+.contact form {
+  margin-top: 50px;
+}
+.contact input {
+  border-radius: 25px;
+  padding: 12px 20px;
+  background: transparent;
+  color: #2A3794;
+  box-shadow: 0 0 9px #02BDEB;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: right;
+}
+.contact input:focus {
+  box-shadow: 0 0 9px #0396bb;
+}
+.contact textarea {
+  border-radius: 25px;
+  padding: 20px;
+  background: transparent;
+  color: #2A3794;
+  box-shadow: 0 0 9px #02BDEB;
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-bottom: 30px;
+  height: 150px;
+  resize: none;
+}
+.contact textarea:focus {
+  box-shadow: 0 0 9px #0396bb;
+}
+.contact button {
+  background: #02BDEB;
+  color: #fff;
+  border: 2px solid #02BDEB;
+  border-radius: 25px;
+  padding: 0.4rem 4rem;
+  font-size: 18px;
+}
+.contact button:hover {
+  background: transparent;
+  color: #02BDEB;
+}
+
+footer {
+  padding: 40px 0;
+  background: #02BDEB;
+  color: #fff;
+  margin-top: 50px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+footer ul li a:hover {
+  color: #2A3794;
+  padding-right: 10px;
+}
+footer h4 {
+  margin-top: 10px;
+}
+footer img.logo {
+  height: 80px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section-padding {
+    padding: 45px 0;
+  }
+
+  .intro .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .intro nav button {
+    margin-top: 15px;
+  }
+
+  .classes .class-box {
+    margin-top: 50px;
+  }
+
+  .help .section-title {
+    color: #02BDEB;
+  }
+
+  .help {
+    min-height: 100vh;
+  }
+
+  .services .serv-box.spec h4 {
+    background: url(../images/icons/circle.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center center;
+    height: 160px;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    margin-top: 50px;
+  }
+
+  .price .item h3 {
+    margin-top: 40px;
+  }
+
+  .help svg.bg {
+    position: absolute;
+    right: -50px;
+    width: 550px;
+    top: -150px;
+    z-index: -1;
+  }
+
+  .price svg.bg {
+    position: absolute;
+    left: -35px;
+    width: 550px;
+    top: -100px;
+    z-index: -1;
+  }
+}
+/* galaxy S5 */
+/* iphone x, 6/7/8 */
+/* iphone 6/7/8 plus */
+/* ipad */
+/* ipad pro  */
+/* 17 inch */
+@media only screen and (min-width: 1920px) and (max-width: 2500px) {
+  .help {
+    min-height: 50vh;
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position: 118% 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
