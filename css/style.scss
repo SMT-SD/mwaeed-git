@@ -692,4 +692,9 @@ footer {
         background-repeat: no-repeat;
         background-position: 118% 50px;
     }
+    .price {
+        min-height: 80vh;
+        position: relative;
+        overflow: hidden;
+    }
 }
