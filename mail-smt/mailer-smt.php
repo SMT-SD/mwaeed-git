@@ -59,7 +59,7 @@ try {
     $mail->Password = 'SmT@2022';
 
     //Recipients
-    $mail->setFrom('info@smt.sa', 'SMT Website (Contact us)');
+    $mail->setFrom('info@smt.sa', 'Mwaeed Website (Contact us)');
     $mail->addAddress('info@smt.sa', 'SMT Info');     //Add a recipient
 
     //Content
