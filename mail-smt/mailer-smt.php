@@ -64,7 +64,7 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = "Mwaeed Website: " . $_POST['subject']; //'Here is the subject';
+    $mail->Subject = "Mwaeed Website: " . $_POST['name']; //'Here is the subject';
     $mail->Body    = "Name: " . $_POST['name']
         . "<br>Email: " . $_POST['email']
         . "<br>Company: " . $_POST['company']
