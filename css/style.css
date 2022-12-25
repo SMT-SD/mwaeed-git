@@ -19,7 +19,6 @@ body {
   font-family: "Almarai", sans-serif;
   overflow-x: hidden;
   position: relative;
-  direction: rtl;
 }
 
 a {
@@ -490,30 +489,24 @@ footer img.logo {
   .section-padding {
     padding: 45px 0;
   }
-
   .intro .navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: 10px;
     margin-top: 10px;
   }
-
   .intro nav button {
     margin-top: 15px;
   }
-
   .classes .class-box {
     margin-top: 50px;
   }
-
   .help .section-title {
     color: #02BDEB;
   }
-
   .help {
     min-height: 100vh;
   }
-
   .services .serv-box.spec h4 {
     background: url(../images/icons/circle.png);
     background-repeat: no-repeat;
@@ -524,11 +517,9 @@ footer img.logo {
     padding-bottom: 0px;
     margin-top: 50px;
   }
-
   .price .item h3 {
     margin-top: 40px;
   }
-
   .help svg.bg {
     position: absolute;
     right: -50px;
@@ -536,7 +527,6 @@ footer img.logo {
     top: -150px;
     z-index: -1;
   }
-
   .price svg.bg {
     position: absolute;
     left: -35px;
@@ -558,7 +548,6 @@ footer img.logo {
     background-repeat: no-repeat;
     background-position: 118% 50px;
   }
-
   .price {
     min-height: 80vh;
     position: relative;
